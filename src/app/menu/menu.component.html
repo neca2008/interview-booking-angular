@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light menu-navbar-shadow">
+  <a (click)="navigateToHome()">
+    <img src="../../assets/resources/images/logo2.png" height="45,2" width="100"/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse menu-titles" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active menu-li-distance">
+        <a class="nav-link menu-color" (click)="navigateToHome()">CALENDAR</a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle menu-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          USERS & ROOMS MANAGEMENT
+        </a>
+        <div class="dropdown-menu menu-dropdown" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item menu-font" (click)="navigateToRoomsAdmin()">Rooms</a>
+          <a class="dropdown-item menu-font" (click)="navigateToUsersAdmin()" >Users</a>
+
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</nav>

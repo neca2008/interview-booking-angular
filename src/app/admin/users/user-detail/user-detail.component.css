@@ -1,0 +1,70 @@
+.user-detail-component{
+  background-color: #fafafa;
+  border-radius: 2px;
+  padding: 1em 1.2em 2em 1.2em;
+}
+
+.user-detail-button-edit {
+  background: #ffffff;
+  border: 0.8px solid #689fa2;
+  border-radius: 2px;
+  color: #689fa2;
+  margin: 0 !important;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.user-detail-button-edit:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.user-detail-button-edit:active {
+  background-color: #517d80 !important;
+  color: #ffffff !important;
+}
+
+.user-detail-button-cancel {
+  background: #f6a89a;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 0 !important;
+}
+
+.user-detail-button-cancel:hover {
+  color: #ffffff !important;
+  background-color: #e19b8e !important;
+}
+
+.user-detail-button-cancel:active {
+  color: #ffffff !important;
+  background-color: #c88c81 !important;
+}
+
+.user-detail-button-reset {
+  background: #ffffff;
+  border: 0.8px solid #689fa2;
+  border-radius: 2px;
+  color: #689fa2;
+  margin: 0 !important;
+  padding: 0.2em 0.2em 0.2em !important;
+  font-size: 0.9em;
+}
+
+.user-detail-button-reset:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.user-detail-button-reset:active {
+  background-color: #517d80 !important;
+  color: #ffffff !important;
+}
+
+.user-detail-td-padding{
+  padding-right: 1rem !important;
+}
+
+
+

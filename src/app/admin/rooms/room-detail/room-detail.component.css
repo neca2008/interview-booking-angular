@@ -1,0 +1,52 @@
+
+.room-detail-component{
+  background-color: #fafafa;
+  border-radius: 2px;
+  padding: 1em 1.2em 2em 1.2em;
+}
+
+.room-detail-button-edit {
+  background: #ffffff;
+  border: 0.8px solid #689fa2;
+  border-radius: 2px;
+  color: #689fa2;
+  margin: 0 !important;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.room-detail-button-edit:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.room-detail-button-edit:active {
+  background-color: #517d80 !important;
+  color: #ffffff !important;
+}
+
+.room-detail-button-cancel {
+  background: #f6a89a;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 0 !important;
+}
+
+.room-detail-button-cancel:hover {
+  color: #ffffff !important;
+  background-color: #e19b8e !important;
+}
+
+.room-detail-button-cancel:active {
+  color: #ffffff !important;
+  background-color: #c88c81 !important;
+}
+
+.room-detail-td-padding{
+  padding-right: 1rem !important;
+}
+
+.room-detail-font-size{
+  font-size:1.15rem !important;
+}

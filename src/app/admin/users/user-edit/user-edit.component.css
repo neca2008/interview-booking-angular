@@ -1,0 +1,27 @@
+input.ng-invalid.ng-touched {
+  border: 1px solid #c88c81;
+}
+
+.user-edit-component{
+  background-color: #fafafa;
+  border-radius: 2px;
+  padding: 1em 1.2em 1em 1.2em;
+}
+
+.user-edit-save-button {
+  background: #619fa2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+.user-edit-save-button:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.user-edit-save-button:active {
+  background-color: #517d80 !important;
+}
+
+

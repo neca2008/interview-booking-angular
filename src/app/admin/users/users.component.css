@@ -1,0 +1,47 @@
+.user-container{
+  padding: 1em 2em 2em 2em;
+}
+
+.user-new-button{
+  background: #619fa2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 1em 1em 2em !important;
+}
+
+.user-new-button:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.user-new-button:active {
+  background-color: #517d80 !important;
+}
+
+.user-button-edit {
+  background: #ffffff;
+  border: 0.8px solid #689fa2;
+  border-radius: 2px;
+  color: #689fa2;
+  margin: 0 !important;
+}
+
+.user-button-edit:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.user-button-edit:active {
+  background-color: #517d80 !important;
+  color: #ffffff !important;
+}
+
+.user-align-center{
+  text-align: center;
+  display: block;
+}
+
+.user-image{
+  opacity: 27%;
+}

@@ -1,0 +1,66 @@
+<h1 class="calendar-title">Interview Booking Manager</h1>
+<div class="row calendar-text-row">
+
+  <div class="col-9">
+    <h4 class="calendar-subtitle">The following meetings are taking place on:
+      <input class="calendar-select-date" type="date" [(ngModel)]="selectedDate" (change)="dateChanged()"
+             name="selectedDate"/>
+    </h4>
+  </div>
+  <div class="col-3">
+    <a class="btn btn-primary mt-3 mb-5 calendar-new-button" (click)="addBooking()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+      New Booking</a>
+  </div>
+
+
+</div>
+<div *ngIf="dataLoaded" class="container calendar-container">
+  <h3 class="mt-5" *ngIf="bookings.length === 0 ">There are no meetings currently scheduled for this date.</h3>
+
+  <div class="row calendar-border" *ngFor="let booking of bookings">
+    <div class="col-2 text-right">
+      <h1 class="display-4"><span
+        class="badge badge-secondary calendar-date">{{booking.getDateAsDate() | date: 'dd'}}</span></h1>
+      <h3>{{booking.getDateAsDate() | date: 'MMM'}}</h3>
+    </div>
+    <div class="col-10">
+      <div class="row">
+        <div class="col-8">
+          <h3 class="text-uppercase"><h3>{{booking.title}}</h3></h3>
+        </div>
+        <div class="col-4">
+          <a class="btn btn-warning calendar-button-edit calendar-buttons-margin" (click)="editBooking(booking.id)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#689fa2" width="18px" height="18px"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            Edit</a>
+          <a class="btn btn-danger calendar-button-cancel" (click)="deleteBooking(booking.id)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/><path d="M0 0h24v24H0V0z" fill="none"/></svg>
+            Cancel</a>
+        </div>
+      </div>
+
+      <ul class="list-inline">
+        <li class="list-inline-item calendar-list-margin">
+          <i class="fa fa-calendar-o calendar-icon-margin" aria-hidden="true"></i>
+          {{booking.getDateAsDate() | date: 'EEE'}}</li>
+        <li class="list-inline-item calendar-list-margin">
+          <i class="fa fa-clock-o calendar-icon-margin" aria-hidden="true"></i>{{booking.startTime}}
+          - {{booking.endTime}}
+        </li>
+        <li class="list-inline-item calendar-list-margin">
+          <i class="fa fa-location-arrow calendar-icon-margin" aria-hidden="true"></i>{{booking.room.name}}
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-12">
+          <p class="mb-0">Booked by : {{booking.user.name}}</p>
+          <p class="mb-0">Room layout: {{booking.layout}}</p>
+          <p>Participants: {{booking.participants}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

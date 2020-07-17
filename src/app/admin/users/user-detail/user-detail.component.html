@@ -1,0 +1,55 @@
+<div class="userDetails container user-detail-component">
+  <div class="row">
+    <div class="col-6">
+      <h2>User details</h2>
+    </div>
+    <div class="col-6">
+      <a class="btn btn-warning user-detail-button-edit" (click)="editUser()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#689fa2" width="18px" height="18px">
+          <path
+            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+        Edit</a>
+
+      <a class="btn btn-small btn-warning user-detail-button-cancel" (click)="deleteUser()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px">
+          <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/>
+          <path d="M0 0h24v24H0V0z" fill="none"/>
+        </svg>
+        Delete</a>
+    </div>
+  </div>
+  <div *ngIf="message">{{message}}</div>
+  <table>
+    <tr>
+      <td><strong class="user-detail-td-padding">Number</strong></td>
+      <td class="user-table-margin">{{user?.id}}</td>
+    </tr>
+    <tr>
+      <td><strong class="user-detail-td-padding">Name</strong></td>
+      <td class="user-table-margin">{{user?.name}}</td>
+    </tr>
+    <tr>
+      <td><strong class="user-detail-td-padding">Password</strong></td>
+      <td>
+        <a class="btn btn-warning user-detail-button-reset" (click)="resetPassword()">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="#689fa2"
+               width="18px" height="18px">
+            <g>
+              <rect fill="none" height="24" width="24" x="0"/>
+            </g>
+            <g>
+              <g>
+                <g>
+                  <path
+                    d="M21,10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-0.1c-2.73,2.71-2.73,7.08,0,9.79s7.15,2.71,9.88,0 C18.32,15.65,19,14.08,19,12.1h2c0,1.98-0.88,4.55-2.64,6.29c-3.51,3.48-9.21,3.48-12.72,0c-3.5-3.47-3.53-9.11-0.02-12.58 s9.14-3.47,12.65,0L21,3V10.12z M12.5,8v4.25l3.5,2.08l-0.72,1.21L11,13V8H12.5z"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          Reset Password</a>
+      </td>
+    </tr>
+  </table>
+</div>

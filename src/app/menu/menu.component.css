@@ -1,0 +1,46 @@
+.menu-navbar-shadow{
+  box-shadow: 0 10px 30px 0px #d9d9d9 !important;
+  background-color: #619fa2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu-titles{
+  margin-left: 10% !important;
+  font-size: 0.85rem !important;
+  font-weight: 300;
+}
+
+.menu-color{
+  color: #d9d9d9 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-color:hover{
+  text-decoration: underline;
+}
+
+.menu-li-distance{
+  margin-right: 20%;
+}
+
+.menu-dropdown{
+  width: 100%;
+  background-color: #619fa2;
+  color: #d9d9d9;
+  font-family: 'Monserrat',sans-serif;
+  font-weight: 200;
+}
+
+.menu-font{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 300;
+}
+
+.menu-font :hover{
+  background-color: yellow !important;
+  color:#737373 !important;
+  text-decoration: underline !important;
+}

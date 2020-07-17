@@ -1,0 +1,28 @@
+.edit-booking-title {
+  font-weight: 300;
+  margin: 1rem 0 0rem 0;
+  padding: 0.7em;
+}
+
+.edit-booking-container {
+  padding: 1em 2em;
+}
+
+
+.edit-booking-save-button {
+  background: #619fa2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 1em 0 1em !important;
+  float: right;
+}
+
+.edit-booking-save-button:hover {
+  background: #598689;
+  color: #ffffff;
+}
+
+.edit-booking-save-button:active {
+  background-color: #517d80 !important;
+}

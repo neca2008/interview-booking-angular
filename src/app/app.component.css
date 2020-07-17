@@ -1,0 +1,17 @@
+.app-fixed-top-main{
+  margin-top: 8%;
+}
+
+.app-container-background{
+  background: #ffffff;
+  border-radius: 2px;
+  margin-bottom:2.3em !important;
+}
+
+
+
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1305px !important;
+  }
+}
